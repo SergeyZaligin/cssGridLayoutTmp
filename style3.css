@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+.included {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1em;
+	grid-auto-rows: minmax(80px, auto);
+}
+
+.included>div {
+	outline: 1px solid #000;
+}
+
+#wrapper {
+	display: grid;
+	/*3 первые колонки 1fr(fr гибкий размер)*/
+	grid-template-columns: repeat(3, 1fr);
+	/*Отступы между элементами*/
+	grid-gap: 1em;
+	/*Высота элементов*/
+	grid-auto-rows: minmax(100px, auto);
+}
+
+#wrapper > div {
+	padding: 1em;
+	font-size: 1em;
+	background-color: #eb7181;
+}
+
+#wrapper > div.light {
+	padding: 1em;
+	font-size: 1em;
+	background-color: #edb1b9;
+}
+
+#header {
+	background-color: yellow;
+}
+#main {
+
+}
+#footer {
+	background-color: #e3e3e3;
+}
